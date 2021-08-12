@@ -36,7 +36,7 @@ const Footer = () => {
                   subject="Info"
                   body="Escribenos lo que quieras"
                >
-                  <Email fontSize="large" round />
+                  <Email fontSize="large" />
                </Mailto>
                <Twitter fontSize="large" className="mb-2"/>
                <Instagram fontSize="large" className="mb-2" />
