@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Box, AppBar, Toolbar, Typography } from '@material-ui/core';
-import DropDownMenu from './dropdown-menu';
 import { createTheme, ThemeProvider, styled } from '@material-ui/core/styles';
 import ChangeLanguage from './change-language';
 import HomeIcon from '@material-ui/icons/Home';
@@ -30,8 +29,8 @@ const Header = () => {
          <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" color="secondary">
                <StyledToolbar>
-                  <Typography variant="h6" noWrap>
-                     <DropDownMenu />
+                  <Typography variant="h5" noWrap color="primary">
+                     EGOLPE
                   </Typography>
                   {location.pathname === "/" ? <ChangeLanguage /> : 
                      <Link to="/" style={{ color: '#FFF' }}><HomeIcon/></Link>}
